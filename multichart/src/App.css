@@ -1,0 +1,34 @@
+.container {
+  position: relative;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start; /* Adjust line spacing */
+
+  background-color: black;
+}
+
+.chartBox {
+  position: relative;
+  /*
+  width: calc(25vw - 5px);  For 4 columns on desktop 
+  height: calc(33.3vh - 5px);  Adjust height as needed */
+
+  width: calc(33.3vw - 5px);  
+  height: calc(13.3vw - 5px);
+  
+  margin: 2px;
+  
+  background-color: white; /* Or any color you want */
+}
+
+/* Media query for iPad size */
+@media (max-width: 1024px) {
+  .chartBox {
+    width: calc(33.33vw - 10px); /* For 3 columns on iPad */
+    height: calc(33.33vh - 10px); /* Adjust height as needed */
+  }
+}
